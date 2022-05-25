@@ -1,4 +1,5 @@
 <template>
+<!--HOME SECTION-->
 <v-app id="home" class="homeView" :style="{ background: $vuetify.theme.themes.dark.background}">
 <NavBar />
 <v-container fluid>
@@ -25,6 +26,7 @@
       </v-col>
     </v-col>
     
+<!--ABOUT SECTION-->
     
     <v-col id="about" cols="12" class="padd">
       <div class="first">
@@ -117,7 +119,9 @@
         </v-row>
       </div>
     </v-col>
-    
+
+<!--PROJECT SECTION-->
+
     <v-col class="about" md="3" offset-md="3" id="project">
       <h4 class="white--text">WYBRANE PROJEKTY</h4>
       <p class="grey--text">Wykonane projekty</p>
@@ -163,6 +167,8 @@
         </v-col>
       </v-col>
     </div>
+
+<!--CONTACT SECTION-->
 
     <v-col cols="12" class="padd topInverse">
       <div class="second">
@@ -211,8 +217,16 @@ import FooterComp from '@/components/FooterComp.vue'
 
 <style scoped>
 
+@media only screen and (max-width: 959px) {
+  .about {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
 .homeView {
   min-width: 850px;
+  margin-top: -80px;
 }
 
 .mainImg {
@@ -241,7 +255,8 @@ import FooterComp from '@/components/FooterComp.vue'
 }
 
 .about {
-  margin-top: 20px;
+  margin-top: -60px;
+  padding-top: 100px;
 }
 
 .topInverse {
