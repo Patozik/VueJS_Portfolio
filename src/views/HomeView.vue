@@ -1,5 +1,5 @@
 <template>
-<v-app id="home" :style="{ background: $vuetify.theme.themes.dark.background}">
+<v-app id="home" class="homeView" :style="{ background: $vuetify.theme.themes.dark.background}">
 <NavBar />
 <v-container fluid>
   <v-row>
@@ -32,9 +32,9 @@
           <v-col cols="12">
             <div class="child bgColor1">
               <v-icon color="#ff4d00" x-large class="ml-3">
-                mdi-palette-swatch
+                fa-earth-europe
               </v-icon>
-              <h3 class="white--text ml-3 mt-4">Staże międzynarodowe</h3>
+              <h3 class="white--text ml-3 mt-4">Staż międzynarodowy</h3>
               <p class="grey--text ml-3 mt-6">
                 Staż w Irlandi, Dublin
               </p>
@@ -44,7 +44,7 @@
               </v-btn>
             </div>
             <div class="child bgColor2">
-              <v-icon x-large class="ml-3" dark>mdi-shopping</v-icon>
+              <v-icon x-large class="ml-3" dark>fa-certificate</v-icon>
               <h3 class="white--text ml-3 mt-4">Certyfikaty</h3>
               <p class="black--text ml-3 mt-6">
                 Certyfikaty Cisco, Europass
@@ -70,21 +70,25 @@
           </v-col>
           <v-col cols="12" class="mt-10">
             <div class="child1 ">
-              <h1 class="orange--text text--darken-4 mt-4 number">4</h1>
-              <h3 class="white--text mt-4">Lata doświadczenia</h3>
+              <h1 class="orange--text text--darken-4 mt-4 number">Technologie</h1>
+              <h3 class="white--text mt-4">w których pracuje</h3>
             </div>
             <div class="child2 mRight">
               <v-row>
                 <v-col cols="12" class="childcol">
                   <div class="child2 mButton padding bgColor1">
-                    <h1 class="orange--text text--darken-4">1</h1>
-                    <p class="grey--text">Staż międzynarodowy</p>
+                    <v-icon color="#ff4d00" x-large class="iconAbout">
+                      fa-brands fa-vuejs
+                    </v-icon>
+                    <p class="grey--text">Vue.JS</p>
                   </div>
                 </v-col>
                 <v-col cols="12" class="childcol">
                   <div class="child2 padding bgColor1">
-                    <h1 class="orange--text text--darken-4">50+</h1>
-                    <p class="grey--text">Ukonczońych Projektów</p>
+                    <v-icon color="#ff4d00" x-large class="iconAbout">
+                      fa-brands fa-node
+                    </v-icon>
+                    <p class="grey--text">Node.JS</p>
                   </div>
                 </v-col>
               </v-row>
@@ -93,14 +97,18 @@
               <v-row>
                 <v-col cols="12" class="childcol">
                   <div class="child2 mButton padding bgColor1">
-                    <h1 class="orange--text text--darken-4">2</h1>
-                    <p class="grey--text">Ukończone szkoły IT</p>
+                    <v-icon color="#ff4d00" x-large class="iconAbout">
+                      fa-brands fa-html5
+                    </v-icon>
+                    <p class="grey--text">HTML 5</p>
                   </div>
                 </v-col>
                 <v-col cols="12" class="childcol">
                   <div class="child2 padding bgColor1">
-                    <h1 class="orange--text text--darken-4">10+</h1>
-                    <p class="grey--text">Certyfikatów</p>
+                    <v-icon color="#ff4d00" x-large class="iconAbout">
+                      fa-brands fa-css3
+                    </v-icon>
+                    <p class="grey--text">CSS 3</p>
                   </div>
                 </v-col>
               </v-row>
@@ -117,34 +125,45 @@
     <v-col md="3" class="about text-end">
       <v-btn tile color="#ff4d00" dark>Zobacz wszystkie</v-btn>
     </v-col>
-    <v-col md="3" offset-md="3">
-      <v-card class="pa-3 py-5" outlined tile height="260px" color="#ff4d00">
-        <v-img src="website_1.png" contain></v-img>
-      </v-card>
-    </v-col>
-    <v-col md="3">
-      <v-card class="pa-3 py-5" outlined tile height="260px" color="#ff4d00" >
-        <v-img src="website_2.png" contain></v-img>
-      </v-card>
-    </v-col>
-    <v-col md="3" offset-md="3">
-      <v-btn color="white" dark text class="ml-n4">
-        Projekt Portfolio
-      </v-btn><br />
-      <v-btn color="#ff4d00" dark text class="ml-n4">
-        Zobacz więcej
-        <v-icon right>mdi-arrow-right</v-icon>
-      </v-btn>
-    </v-col>
-    <v-col md="3">
-      <v-btn color="white" dark text class="ml-n4">
-        Projekt Portfolio 2
-      </v-btn><br />
-      <v-btn color="#ff4d00" dark text class="ml-n4">
-        Zobacz więcej
-        <v-icon right>mdi-arrow-right</v-icon>
-      </v-btn>
-    </v-col>
+
+    <div class="viewProject">
+      <v-col cols="6">
+        <v-col md="6" offset-md="6">
+          <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
+            <v-img src="website_1.png" contain></v-img>
+          </v-card>
+        </v-col>
+
+        <v-col md="6" offset-md="6">
+          <v-btn color="white" dark text class="ml-n4">
+            Projekt Portfolio
+          </v-btn><br />
+          <v-btn color="#ff4d00" dark text class="ml-n4">
+            Zobacz więcej
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </v-col>
+      </v-col>
+
+      <v-col cols="6">
+        <v-col md="6">
+          <v-card class="pa-3 py-5" outlined tile color="#ff4d00" >
+            <v-img src="website_2.png" contain></v-img>
+          </v-card>
+        </v-col>
+        
+        <v-col md="6">
+          <v-btn color="white" dark text class="ml-n4">
+            Projekt Pogoda w twoim mieście
+          </v-btn><br />
+          <v-btn color="#ff4d00" dark text class="ml-n4">
+            Zobacz więcej
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </v-col>
+      </v-col>
+    </div>
+
     <v-col cols="12" class="padd topInverse">
       <div class="second">
         <div class="secondchild1" id="contact">
@@ -192,6 +211,10 @@ import FooterComp from '@/components/FooterComp.vue'
 
 <style scoped>
 
+.homeView {
+  min-width: 850px;
+}
+
 .mainImg {
   margin-top: 120px;
 }
@@ -228,6 +251,10 @@ import FooterComp from '@/components/FooterComp.vue'
 .topTolbar {
   margin-top: 100px;
   text-align: center;
+}
+
+.iconAbout {
+  margin: 10px 0;
 }
 
 .first {
@@ -268,7 +295,13 @@ import FooterComp from '@/components/FooterComp.vue'
   vertical-align: middle;
   text-align: left;
   margin-right: 8px;
+  margin-top: 10px;
   width: 245px;
+}
+
+.viewProject {
+  width: 100%;
+  display: inline-flex;
 }
 
 .bgColor1 {
@@ -314,7 +347,7 @@ import FooterComp from '@/components/FooterComp.vue'
 }
 
 h1.number{
-  font-size: 50px;
+  font-size: 36px;
   font-weight: bold;
 }
 
