@@ -51,7 +51,7 @@
               <p class="black--text ml-3 mt-6">
                 Certyfikaty Cisco, Europass
               </p>
-              <v-btn dark text>
+              <v-btn color="#1e1e1e" dark text>
                 Zobacz więcej
                 <v-icon right>mdi-arrow-right</v-icon>
               </v-btn>
@@ -140,7 +140,7 @@
 
         <v-col md="6" offset-md="6">
           <v-btn color="white" dark text class="ml-n4">
-            Projekt Portfolio
+            Projekt Śledzenie adresu IP
           </v-btn><br />
           <v-btn color="#ff4d00" dark text class="ml-n4">
             Zobacz więcej
