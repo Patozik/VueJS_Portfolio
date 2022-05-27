@@ -16,8 +16,8 @@
         <h1 class="white--text">Programista</h1>
         <p class="description grey--text">
           Jestem absolwentem Karpackiej Państwowej Uczelni na kierunku Informatyka.<br /> 
-          Oprócz ukończenia tego kierunku bardzo interesuję się informatyką, nowościami 
-          technologicznymi oraz motoryzacją. <br />
+          Oprócz ukończenia tego kierunku bardzo interesuję się informatyką w szczególności
+          programowaniem, nowościami technologicznymi oraz motoryzacją. <br />
           Posiadam już spore doświadczenie w zawodzie, 
           ale również na stanowisku produkcyjnym. Bardzo szybko się uczę, lubię zdobywać 
           nowe doświadczenie, nie boję się podejmować nowych wyzwań.
