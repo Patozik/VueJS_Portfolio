@@ -11,7 +11,7 @@
             </v-col>
             <v-col cols="12" sm="4">
                 <v-card-text class="pt-2">
-                    <v-icon class="mx-2 white--text" size="32px" @click="openInNewTab('https://www.facebook.com/patryk.ozimina/')" >mdi-facebook</v-icon>
+                    <v-icon class="mx-2 white--text" size="32px" >mdi-facebook</v-icon>
                     <v-icon class="mx-2 white--text" size="32px" >mdi-twitter</v-icon>
                     <v-icon class="mx-2 white--text" size="32px" @click="openInNewTab('https://github.com/Patozik')" >mdi-github</v-icon>
                     <v-icon class="mx-2 white--text" size="32px" >mdi-instagram</v-icon>

@@ -179,8 +179,11 @@
                 Jestem gotowy na realizację kolejnych projektów!
               </h1>
               <p class="grey--text">
-                Kolejne projekty już wkrótce ...
+                Kolejne projekty już wkrótce, sprawdź mój profil GitHub
               </p>
+              <v-icon size="28px" color="#ff4d00">mdi-arrow-right</v-icon>
+              <v-icon class="mx-4" size="42px" dark @click="openInNewTab('https://github.com/Patozik')">mdi-github</v-icon>
+              <v-icon size="28px" color="#ff4d00">mdi-arrow-left</v-icon>
             </v-col>
           </v-row>
         </div>
@@ -211,7 +214,12 @@ import FooterComp from '@/components/FooterComp.vue'
     components: {
     NavBar,
     FooterComp
-},
+    },
+    methods: {
+        async openInNewTab(url) {
+            window.open(url, '_blank').focus();
+        },
+    }
   }
 </script>
 
