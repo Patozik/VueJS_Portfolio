@@ -142,7 +142,7 @@
           <v-btn color="white" dark text class="ml-n4">
             Projekt Śledzenie adresu IP
           </v-btn><br />
-          <v-btn color="#ff4d00" dark text class="ml-n4">
+          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_IPTracker')">
             Zobacz więcej
             <v-icon right>mdi-arrow-right</v-icon>
           </v-btn>
@@ -160,7 +160,45 @@
           <v-btn color="white" dark text class="ml-n4">
             Projekt Pogoda w twoim mieście
           </v-btn><br />
-          <v-btn color="#ff4d00" dark text class="ml-n4">
+          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_WeatherApp')">
+            Zobacz więcej
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </v-col>
+      </v-col>
+    </div>
+
+    <div class="viewProject">
+      <v-col cols="6">
+        <v-col md="6" offset-md="6">
+          <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
+            <v-img src="website_3.png" contain></v-img>
+          </v-card>
+        </v-col>
+
+        <v-col md="6" offset-md="6">
+          <v-btn color="white" dark text class="ml-n4">
+            Projekt aplikacji czatu
+          </v-btn><br />
+          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_ChatApp')">
+            Zobacz więcej
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </v-col>
+      </v-col>
+
+      <v-col cols="6">
+        <v-col md="6">
+          <v-card class="pa-3 py-5" outlined tile color="#ff4d00" >
+            <v-img src="website_4.png" contain></v-img>
+          </v-card>
+        </v-col>
+        
+        <v-col md="6">
+          <v-btn color="white" dark text class="ml-n4">
+            Projekt Autoryzacja z Firebase
+          </v-btn><br />
+          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_Firebase_Authentication')">
             Zobacz więcej
             <v-icon right>mdi-arrow-right</v-icon>
           </v-btn>
