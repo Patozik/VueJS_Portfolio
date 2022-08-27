@@ -1,245 +1,276 @@
 <template>
-<!--HOME SECTION-->
-<v-app id="home" class="homeView" :style="{ background: $vuetify.theme.themes.dark.background}">
-<NavBar />
-<v-container fluid>
-  <v-row>
-    <v-col cols="6">
-      <v-img class="mainImg" src="mt_09_orange.png" contain max-height="500"></v-img>
-    </v-col>
-    <v-col cols="6" class="titleHello">
-      <v-col offset-md="3">
-        <v-img class="myPhoto" src="my_photo.jpg"></v-img>
-      </v-col>
-      <v-col class="titleDescription" md="9">
-        <h3 class="orange--text text--darken-4 top">Cześć, jestem Patryk</h3>
-        <h1 class="white--text">Programista</h1>
-        <p class="description grey--text">
-          Jestem absolwentem Karpackiej Państwowej Uczelni na kierunku Informatyka.<br /> 
-          Oprócz ukończenia tego kierunku bardzo interesuję się informatyką w szczególności
-          programowaniem, nowościami technologicznymi oraz motoryzacją. <br />
-          Posiadam już spore doświadczenie w zawodzie, 
-          ale również na stanowisku produkcyjnym. Bardzo szybko się uczę, lubię zdobywać 
-          nowe doświadczenie, nie boję się podejmować nowych wyzwań.
-        </p>
-        <v-btn tile color="#ff4d00" dark>Dowiedz się więcej o mnie</v-btn>
-      </v-col>
-    </v-col>
-    
-<!--ABOUT SECTION-->
-    
-    <v-col id="about" cols="12" class="padd">
-      <div class="first">
-        <v-row>
-          <v-col cols="12">
-            <div class="child bgColor1">
-              <v-icon color="#ff4d00" x-large class="ml-3">
-                fa-earth-europe
-              </v-icon>
-              <h3 class="white--text ml-3 mt-4">Staż międzynarodowy</h3>
-              <p class="grey--text ml-3 mt-6">
-                Staż w Irlandi, Dublin
-              </p>
-              <v-btn color="#ff4d00" dark text>
-                Zobacz więcej
-                <v-icon right>mdi-arrow-right</v-icon>
-              </v-btn>
-            </div>
-            <div class="child bgColor2">
-              <v-icon x-large class="ml-3" dark>fa-certificate</v-icon>
-              <h3 class="white--text ml-3 mt-4">Certyfikaty</h3>
-              <p class="black--text ml-3 mt-6">
-                Certyfikaty Cisco, Europass
-              </p>
-              <v-btn color="#1e1e1e" dark text>
-                Zobacz więcej
-                <v-icon right>mdi-arrow-right</v-icon>
-              </v-btn>
-            </div>
-            <div class="child bgColor1">
-              <v-icon color="#ff4d00" x-large class="ml-3">
-                mdi-book-open-page-variant
-              </v-icon>
-              <h3 class="white--text ml-3 mt-4">Szkolenia</h3>
-              <p class="grey--text ml-3 mt-6">
-                Ukończone wiele kursów
-              </p>
-              <v-btn color="#ff4d00" dark text>
-                Zobacz więcej
-                <v-icon right>mdi-arrow-right</v-icon>
-              </v-btn>
-            </div>
+  <!--HOME SECTION-->
+  <v-app id="home" class="homeView" :style="{ background: $vuetify.theme.themes.dark.background}">
+    <NavBar />
+    <v-container fluid>
+      <v-row>
+        <v-col cols="6">
+          <v-img class="mainImg" src="mt_09_orange.png" contain max-height="500"></v-img>
+        </v-col>
+        <v-col cols="6" class="titleHello">
+          <v-col offset-md="3">
+            <v-img class="myPhoto" src="my_photo.jpg"></v-img>
           </v-col>
-          <v-col cols="12" class="mt-10">
-            <div class="child1 ">
-              <h1 class="orange--text text--darken-4 mt-4 number">Technologie</h1>
-              <h3 class="white--text mt-4">w których pracuje</h3>
-            </div>
-            <div class="child2 mRight">
-              <v-row>
-                <v-col cols="12" class="childcol">
-                  <div class="child2 mButton padding bgColor1">
-                    <v-icon color="#ff4d00" x-large class="iconAbout">
-                      fa-brands fa-vuejs
-                    </v-icon>
-                    <p class="grey--text">Vue.JS</p>
-                  </div>
-                </v-col>
-                <v-col cols="12" class="childcol">
-                  <div class="child2 padding bgColor1">
-                    <v-icon color="#ff4d00" x-large class="iconAbout">
-                      fa-brands fa-node
-                    </v-icon>
-                    <p class="grey--text">Node.JS</p>
-                  </div>
-                </v-col>
-              </v-row>
-            </div>
-            <div class="child2">
-              <v-row>
-                <v-col cols="12" class="childcol">
-                  <div class="child2 mButton padding bgColor1">
-                    <v-icon color="#ff4d00" x-large class="iconAbout">
-                      fa-brands fa-html5
-                    </v-icon>
-                    <p class="grey--text">HTML 5</p>
-                  </div>
-                </v-col>
-                <v-col cols="12" class="childcol">
-                  <div class="child2 padding bgColor1">
-                    <v-icon color="#ff4d00" x-large class="iconAbout">
-                      fa-brands fa-css3
-                    </v-icon>
-                    <p class="grey--text">CSS 3</p>
-                  </div>
-                </v-col>
-              </v-row>
-            </div>
+          <v-col class="titleDescription" md="9">
+            <h3 class="orange--text text--darken-4 top">Cześć, jestem Patryk</h3>
+            <h1 class="white--text">Junior Full Stack Developer</h1>
+            <p class="description grey--text">
+              Jestem absolwentem Karpackiej Państwowej Uczelni na kierunku Informatyka.<br />
+              Oprócz ukończenia tego kierunku bardzo interesuję się informatyką w szczególności
+              programowaniem, nowościami technologicznymi oraz motoryzacją. <br />
+              Posiadam już spore doświadczenie w zawodzie,
+              ale również na stanowisku produkcyjnym. Bardzo szybko się uczę, lubię zdobywać
+              nowe doświadczenie, nie boję się podejmować nowych wyzwań.
+            </p>
+            <v-btn tile color="#ff4d00" dark
+              @click="openInNewTab('https://www.linkedin.com/in/patryk-ozimina-489a56242/')">Dowiedz się więcej o mnie
+            </v-btn>
           </v-col>
-        </v-row>
-      </div>
-    </v-col>
-
-<!--PROJECT SECTION-->
-
-    <v-col class="about" md="3" offset-md="3" id="project">
-      <h4 class="white--text">WYBRANE PROJEKTY</h4>
-      <p class="grey--text">Wykonane projekty</p>
-    </v-col>
-    <v-col md="3" class="about text-end">
-      <v-btn tile color="#ff4d00" dark>Zobacz wszystkie</v-btn>
-    </v-col>
-
-    <div class="viewProject">
-      <v-col cols="6">
-        <v-col md="6" offset-md="6">
-          <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
-            <v-img src="website_1.png" contain></v-img>
-          </v-card>
         </v-col>
 
-        <v-col md="6" offset-md="6">
-          <v-btn color="white" dark text class="ml-n4">
-            Projekt Śledzenie adresu IP
-          </v-btn><br />
-          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_IPTracker')">
-            Zobacz więcej
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-      </v-col>
+        <!--ABOUT SECTION-->
 
-      <v-col cols="6">
-        <v-col md="6">
-          <v-card class="pa-3 py-5" outlined tile color="#ff4d00" >
-            <v-img src="website_2.png" contain></v-img>
-          </v-card>
+        <v-col id="about" cols="12" class="padd">
+          <div class="first">
+            <v-row>
+              <v-col cols="12">
+                <div class="child bgColor1">
+                  <v-icon color="#ff4d00" x-large class="ml-3">
+                    fa-earth-europe
+                  </v-icon>
+                  <h3 class="white--text ml-3 mt-4">Staż międzynarodowy</h3>
+                  <p class="grey--text ml-3 mt-6">
+                    Staż w Irlandi, Dublin
+                  </p>
+                  <v-btn color="#ff4d00" dark text
+                    @click="openInNewTab('https://www.linkedin.com/in/patryk-ozimina-489a56242/')">
+                    Zobacz więcej
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                </div>
+                <div class="child bgColor2">
+                  <v-icon x-large class="ml-3" dark>fa-certificate</v-icon>
+                  <h3 class="white--text ml-3 mt-4">Certyfikaty</h3>
+                  <p class="black--text ml-3 mt-6">
+                    Certyfikaty Cisco, Europass
+                  </p>
+                  <v-btn color="#1e1e1e" dark text
+                    @click="openInNewTab('https://www.linkedin.com/in/patryk-ozimina-489a56242/')">
+                    Zobacz więcej
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                </div>
+                <div class="child bgColor1">
+                  <v-icon color="#ff4d00" x-large class="ml-3">
+                    mdi-book-open-page-variant
+                  </v-icon>
+                  <h3 class="white--text ml-3 mt-4">Szkolenia</h3>
+                  <p class="grey--text ml-3 mt-6">
+                    Ukończone wiele kursów
+                  </p>
+                  <v-btn color="#ff4d00" dark text
+                    @click="openInNewTab('https://www.linkedin.com/in/patryk-ozimina-489a56242/')">
+                    Zobacz więcej
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                </div>
+              </v-col>
+              <v-col cols="12" class="mt-10">
+                <div class="child1 ">
+                  <h1 class="orange--text text--darken-4 mt-4 number">Technologie</h1>
+                  <h3 class="white--text mt-4">w których pracuje</h3>
+                </div>
+                <div class="child2 mRight">
+                  <v-row>
+                    <v-col cols="12" class="childcol">
+                      <div class="child2 mButton padding bgColor1">
+                        <v-icon color="#ff4d00" x-large class="iconAbout">
+                          fa-brands fa-node
+                        </v-icon>
+                        <p class="grey--text">Node.JS</p>
+                      </div>
+                    </v-col>
+                    <v-col cols="12" class="childcol">
+                      <div class="child2 padding bgColor1">
+                        <v-icon color="#ff4d00" x-large class="iconAbout">
+                          fa-brands fa-vuejs
+                        </v-icon>
+                        <p class="grey--text">Vue.JS</p>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+                <div class="child2 mRight">
+                  <v-row>
+                    <v-col cols="12" class="childcol">
+                      <div class="child2 mButton padding bgColor1">
+                        <v-icon color="#ff4d00" x-large class="iconAbout">
+                          fa-brands fa-react
+                        </v-icon>
+                        <p class="grey--text">React</p>
+                      </div>
+                    </v-col>
+                    <v-col cols="12" class="childcol">
+                      <div class="child2 padding bgColor1">
+                        <v-icon color="#ff4d00" x-large class="iconAbout">
+                          fa-brands fa-js
+                        </v-icon>
+                        <p class="grey--text">JavaScript</p>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+                <div class="child2">
+                  <v-row>
+                    <v-col cols="12" class="childcol">
+                      <div class="child2 mButton padding bgColor1">
+                        <v-icon color="#ff4d00" x-large class="iconAbout">
+                          fa-brands fa-html5
+                        </v-icon>
+                        <p class="grey--text">HTML 5</p>
+                      </div>
+                    </v-col>
+                    <v-col cols="12" class="childcol">
+                      <div class="child2 padding bgColor1">
+                        <v-icon color="#ff4d00" x-large class="iconAbout">
+                          fa-brands fa-css3
+                        </v-icon>
+                        <p class="grey--text">CSS 3</p>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </div>
+              </v-col>
+            </v-row>
+          </div>
         </v-col>
-        
-        <v-col md="6">
-          <v-btn color="white" dark text class="ml-n4">
-            Projekt Pogoda w twoim mieście
-          </v-btn><br />
-          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_WeatherApp')">
-            Zobacz więcej
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-      </v-col>
-    </div>
 
-    <div class="viewProject">
-      <v-col cols="6">
-        <v-col md="6" offset-md="6">
-          <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
-            <v-img src="website_3.png" contain></v-img>
-          </v-card>
+        <!--PROJECT SECTION-->
+
+        <v-col class="about" md="3" offset-md="3" id="project">
+          <h4 class="white--text">WYBRANE PROJEKTY</h4>
+          <p class="grey--text">Wykonane projekty</p>
+        </v-col>
+        <v-col md="3" class="about text-end">
+          <v-btn tile color="#ff4d00" dark @click="openInNewTab('https://github.com/Patozik?tab=repositories')">Zobacz
+            wszystkie</v-btn>
         </v-col>
 
-        <v-col md="6" offset-md="6">
-          <v-btn color="white" dark text class="ml-n4">
-            Projekt aplikacji czatu
-          </v-btn><br />
-          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_ChatApp')">
-            Zobacz więcej
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-      </v-col>
-
-      <v-col cols="6">
-        <v-col md="6">
-          <v-card class="pa-3 py-5" outlined tile color="#ff4d00" >
-            <v-img src="website_4.png" contain></v-img>
-          </v-card>
-        </v-col>
-        
-        <v-col md="6">
-          <v-btn color="white" dark text class="ml-n4">
-            Projekt Autoryzacja z Firebase
-          </v-btn><br />
-          <v-btn color="#ff4d00" dark text class="ml-n4" @click="openInNewTab('https://github.com/Patozik/VueJS_Firebase_Authentication')">
-            Zobacz więcej
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-      </v-col>
-    </div>
-
-<!--CONTACT SECTION-->
-
-    <v-col cols="12" class="padd topInverse">
-      <div class="second">
-        <div class="secondchild1" id="contact">
-          <v-row>
-            <v-col cols="12">
-              <h1 class="white--text">
-                Jestem gotowy na realizację kolejnych projektów!
-              </h1>
-              <p class="grey--text">
-                Kolejne projekty już wkrótce, sprawdź mój profil GitHub
-              </p>
-              <v-icon size="28px" color="#ff4d00">mdi-arrow-right</v-icon>
-              <v-icon class="mx-4" size="42px" dark @click="openInNewTab('https://github.com/Patozik')">mdi-github</v-icon>
-              <v-icon size="28px" color="#ff4d00">mdi-arrow-left</v-icon>
+        <div class="viewProject">
+          <v-col cols="6">
+            <v-col md="6" offset-md="6">
+              <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
+                <v-img src="website_4.png" contain></v-img>
+              </v-card>
             </v-col>
-          </v-row>
+
+            <v-col md="6" offset-md="6">
+              <v-btn color="white" dark text class="ml-n4">
+                Projekt NodeJS - Zarządzanie użytkownikami
+              </v-btn><br />
+              <v-btn color="#ff4d00" dark text class="ml-n4"
+                @click="openInNewTab('https://github.com/Patozik/NodeJS_Security')">
+                Zobacz więcej
+                <v-icon right>mdi-arrow-right</v-icon>
+              </v-btn>
+            </v-col>
+          </v-col>
+
+          <v-col cols="6">
+            <v-col md="6">
+              <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
+                <v-img src="website_2.png" contain></v-img>
+              </v-card>
+            </v-col>
+
+            <v-col md="6">
+              <v-btn color="white" dark text class="ml-n4">
+                Projekt Pogoda w twoim mieście
+              </v-btn><br />
+              <v-btn color="#ff4d00" dark text class="ml-n4"
+                @click="openInNewTab('https://github.com/Patozik/VueJS_WeatherApp')">
+                Zobacz więcej
+                <v-icon right>mdi-arrow-right</v-icon>
+              </v-btn>
+            </v-col>
+          </v-col>
         </div>
-      </div>
-      <v-toolbar class="topTolbar" color="#111111" dark flat>
-        <div class="secondBar">
-          <v-btn text>Home</v-btn>
-          <v-btn text>O Mnie</v-btn>
-          <v-btn text>Projekty</v-btn>
-          <v-btn text>Kontakt</v-btn>
+
+        <div class="viewProject">
+          <v-col cols="6">
+            <v-col md="6" offset-md="6">
+              <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
+                <v-img src="website_3.png" contain></v-img>
+              </v-card>
+            </v-col>
+
+            <v-col md="6" offset-md="6">
+              <v-btn color="white" dark text class="ml-n4">
+                Projekt aplikacji czatu
+              </v-btn><br />
+              <v-btn color="#ff4d00" dark text class="ml-n4"
+                @click="openInNewTab('https://github.com/Patozik/VueJS_ChatApp')">
+                Zobacz więcej
+                <v-icon right>mdi-arrow-right</v-icon>
+              </v-btn>
+            </v-col>
+          </v-col>
+
+          <v-col cols="6">
+            <v-col md="6">
+              <v-card class="pa-3 py-5" outlined tile color="#ff4d00">
+                <v-img src="website_1.png" contain></v-img>
+              </v-card>
+            </v-col>
+
+            <v-col md="6">
+              <v-btn color="white" dark text class="ml-n4">
+                Projekt Śledzenie adresu IP
+              </v-btn><br />
+              <v-btn color="#ff4d00" dark text class="ml-n4"
+                @click="openInNewTab('https://github.com/Patozik/VueJS_IPTracker')">
+                Zobacz więcej
+                <v-icon right>mdi-arrow-right</v-icon>
+              </v-btn>
+            </v-col>
+          </v-col>
         </div>
-      </v-toolbar>
-    </v-col>
-  </v-row>
-</v-container>
-<FooterComp />
-</v-app>
-  
+
+        <!--CONTACT SECTION-->
+
+        <v-col cols="12" class="padd topInverse">
+          <div class="second">
+            <div class="secondchild1" id="contact">
+              <v-row>
+                <v-col cols="12">
+                  <h1 class="white--text">
+                    Jestem gotowy na realizację kolejnych projektów!
+                  </h1>
+                  <p class="grey--text">
+                    Kolejne projekty już wkrótce, sprawdź mój profil GitHub
+                  </p>
+                  <v-icon size="28px" color="#ff4d00">mdi-arrow-right</v-icon>
+                  <v-icon class="mx-4" size="42px" dark @click="openInNewTab('https://github.com/Patozik')">mdi-github
+                  </v-icon>
+                  <v-icon size="28px" color="#ff4d00">mdi-arrow-left</v-icon>
+                </v-col>
+              </v-row>
+            </div>
+          </div>
+          <v-toolbar class="topTolbar" color="#111111" dark flat>
+            <div class="secondBar">
+              <v-btn text @click="scroll('home')">Home</v-btn>
+              <v-btn text @click="scroll('about')">O Mnie</v-btn>
+              <v-btn text @click="scroll('project')">Projekty</v-btn>
+              <v-btn text @click="scroll('contact')">Kontakt</v-btn>
+            </div>
+          </v-toolbar>
+        </v-col>
+      </v-row>
+    </v-container>
+    <FooterComp />
+  </v-app>
+
 </template>
 
 <script>
@@ -257,6 +288,10 @@ import FooterComp from '@/components/FooterComp.vue'
         async openInNewTab(url) {
             window.open(url, '_blank').focus();
         },
+        scroll(refName) {
+          const element = document.getElementById(refName);
+          element.scrollIntoView({ behavior: "smooth" });
+        }
     }
   }
 </script>
@@ -383,7 +418,7 @@ import FooterComp from '@/components/FooterComp.vue'
 
 .child2 {
   display: inline-block;
-  width: 245px;
+  width: 160px;
   vertical-align: middle;
 }
 
